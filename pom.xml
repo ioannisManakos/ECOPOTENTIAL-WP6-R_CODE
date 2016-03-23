@@ -162,8 +162,8 @@
 					<defaultGroupname>root</defaultGroupname>
 					<autoRequires>false</autoRequires>
 					<autoProvides>false</autoProvides>
-					<description>DCS Python base application</description>
-					<summary>DCS Python base application</summary>
+					<description>R-example base application</description>
+					<summary>R-example base application</summary>
 					<executions>
 						
 						<execution>
