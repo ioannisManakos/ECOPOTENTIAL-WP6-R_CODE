@@ -15,9 +15,6 @@
 		<project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.deploy.skip>true</maven.deploy.skip>
-		<github.global.server>github</github.global.server>
-		<github.site.repositoryName>dcs-r-geoserver-thermal</github.site.repositoryName>
-		<github.site.repositoryOwner>Terradue</github.site.repositoryOwner>
 	</properties>
 
 	<repositories>
