@@ -9,6 +9,9 @@
     <workflowVersion>1.0</workflowVersion>
     <node id="node">
       <job id="template"/>
+      <sources>
+          <source refid="string:list">null</source>
+      </sources>
     </node>
   </workflow>
 </application>
