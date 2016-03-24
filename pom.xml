@@ -126,7 +126,7 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>conda</executable>
+							<executable>R</executable>
 							<arguments>
 								<argument>list</argument>
 								<argument>-e</argument>
