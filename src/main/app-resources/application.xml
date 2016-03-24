@@ -10,7 +10,7 @@
     <node id="node">
       <job id="template"/>
       <sources>
-          <source refid="string:list">null</source>
+          <source refid="file:urls">/application/inputs/list</source>
       </sources>
     </node>
   </workflow>
