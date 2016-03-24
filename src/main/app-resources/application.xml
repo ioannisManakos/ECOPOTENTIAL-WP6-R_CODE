@@ -2,7 +2,7 @@
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="application">
   <jobTemplates>
     <jobTemplate id="template">
-      <streamingExecutable>/application/node/run</streamingExecutable>
+      <streamingExecutable>/application/node/run.R</streamingExecutable>
     </jobTemplate>
   </jobTemplates>
     <workflow id="R-test" title="R-Testing" abstract="NDVI calculation">
