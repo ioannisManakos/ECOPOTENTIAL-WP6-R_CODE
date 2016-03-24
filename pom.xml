@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>CERTH</groupId>
-	<artifactId>ECOPOTENTIAL-WP6</artifactId>
+	<artifactId>ECOPOTENTIAL-WP6-R_CODE</artifactId>
 	<packaging>pom</packaging>
 	<name>R-example</name>
 	<description>R-example</description>
