@@ -38,35 +38,26 @@
 		</pluginRepository>
 	</pluginRepositories>
 	
-	<profiles>
-    		<profile>
-                	<id>R_language</id>
-                        <properties>
-                        	<language>R</language>
-                        </properties>
-                    <build>
-                    	<plugins>
-							<plugin> 
-								<groupId>org.codehaus.mojo</groupId> 
-								<artifactId>exec-maven-plugin</artifactId> 
-								<version>1.3.1</version> 
-								<executions> 
-									<execution> 
-										<id>do package list</id> 
-										<phase>prepare-package</phase> 
-										<goals> 
-											<goal>exec</goal> 
-										</goals> 
-										<configuration> 
-											<executable>R</executable> 
-										</configuration> 
-									</execution> 
-								</executions> 
-							</plugin> 
-                    	</plugins>
-                    </build>
-                </profile>
-    	</profiles>
+	<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.3.1</version>
+					<execution>
+						<id>rgitbook</id>
+						<phase>site</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>R</executable>
+							<arguments>
+								<argument>-e</argument>
+							</arguments>
+						</configuration>
+					</execution>
+
+				</executions>
+			</plugin>
 
 	<build>
 		<plugins>
@@ -120,6 +111,25 @@
 									<directory>${basedir}/src/main/app-resources</directory>
 								</resource>
 							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.3.1</version>
+				<executions>
+					<execution>
+						<id>do package list</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>Rscript</executable>
+							<outputFile>${project.build.directory}/package.list</outputFile>
 						</configuration>
 					</execution>
 				</executions>
